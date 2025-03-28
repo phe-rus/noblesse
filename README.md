@@ -15,10 +15,18 @@ Note: Still Under Active Development
 - Highly Configurable: Customize the platform to meet your unique project needs, this will be dependant on an if statement, if the structure starts of in block form will structure it to be customizable else this will be more like theme editing.
 
 # Contribute
+
 Well you can contribute to the project, will take this to suggestions.
 
 # Technologies Used
+
 - Frontend: [React, Next with typescript or Kotlin Ktor, and, etc.]
 - Backend: [Node.js, express, etc.]
 - Database: [PostgreSQL, MySQL, MongoDB, etc.]
 - Deployment Tools: [docker or script]
+
+# Tech actively being used
+
+- Next.js 15+, kotlin ktor would have been a nightmare to mentain in a long run so next js won by default not like i wasnt rooting for it
+- pnmp +++ just like it over yarn or npm not logic behind it
+- payloadcms for backend
