@@ -1,5 +1,4 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
+@tailwind utilities;
 
 :root {
   --radius: 0.625rem;
@@ -70,5 +69,3 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.553 0.013 58.071);
 }
-
-/** thats all really haven't tested tw-4 but it should work so will test it tomorrow **/
