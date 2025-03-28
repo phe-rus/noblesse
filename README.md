@@ -1,2 +1,2 @@
-# noblesse
-NOTE (STILL UNDER-ACTIVE DEVELOPMENT) noblesse oblige an open source self hosted alternative to vercel, firebase, Google drive and much more features
+# Noblesse
+NOTE (STILL UNDER-ACTIVE DEVELOPMENT) Noblesse an open source self hosted alternative to vercel, firebase, Google drive and much more features
