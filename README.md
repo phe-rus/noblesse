@@ -1,8 +1,22 @@
 # Noblesse
 
+![alt text](/graphics/home.png)
+
 Note: Still Under Active Development
 
-> Noblesse is/will-be an open-source, self-hosted platform designed to provide a comprehensive alternative to services like Vercel, Firebase, Google Drive, and more. With Noblesse, you can seamlessly host web applications, manage databases, store files, and handle deployments all in one platform—without relying on third-party services. Please easily having a easy to use sdk or library to access all the features in the platform in your own application.
+# What is Noblesse?
+
+Noblesse is an all-in-one cloud platform designed for developers, startups, and businesses that need scalable infrastructure for hosting, databases, storage, and version control. Inspired by Vercel, Firebase, Google Drive, and GitHub, Noblesse provides a seamless environment where users can deploy websites, manage databases, store files, and track project versions—all within a dynamic, containerized ecosystem powered by Docker.
+
+With Noblesse, users get auto-scaling hosting, serverless databases, secure cloud storage, and Git-like versioning, ensuring efficient resource management and seamless project collaboration. Whether you're a solo developer or an enterprise, Noblesse grows with your needs, offering on-demand expansion and per-user storage buckets that scale as your data increases.
+
+Built for performance, security, and ease of use, Noblesse is the future of self-hosted cloud infrastructure. 🚀
+
+# Design concept
+
+![alt text](/graphics/dashboard.png)
+![alt text](/graphics/login-account.png)
+![alt text](/graphics/create-account.png)
 
 # Key Features
 
