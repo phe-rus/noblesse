@@ -6,42 +6,47 @@ interface BaseAuthCredentials {
   password: string
 }
 
-interface ResetPasswordCredentials extends BaseAuthCredentials {
-  passwordConfirm: string
-  token: string
-}
-
+// Email-based credential interface
 interface EmailCredentials {
   email: string
 }
 
-interface CreateAccountCredentials extends BaseAuthCredentials, EmailCredentials {
+// Account creation credentials
+export interface CreateAccountCredentials extends BaseAuthCredentials, EmailCredentials {
   username: string
+  passwordConfirm: string
 }
 
-interface LoginCredentials extends BaseAuthCredentials {
+// Login credentials
+export interface LoginCredentials extends BaseAuthCredentials {
   email?: string
   username?: string
 }
 
+// Password reset credentials
+export interface ResetPasswordCredentials extends BaseAuthCredentials {
+  token: string
+  passwordConfirm: string
+}
+
 // Type aliases for functions
-export type ResetPassword = (args: ResetPasswordCredentials) => Promise<User>
-export type ForgotPassword = (args: EmailCredentials) => Promise<User>
 export type CreateAccount = (args: CreateAccountCredentials) => Promise<User>
 export type Login = (args: LoginCredentials) => Promise<User>
 export type Logout = () => Promise<void>
+export type ForgotPassword = (args: EmailCredentials) => Promise<unknown>
+export type ResetPassword = (args: ResetPasswordCredentials) => Promise<User>
 
 // Context interface
 export interface AuthContext {
+  user: User | null
+  permissions: Permissions | null
+  loading: boolean
+  error: string | null
   create: CreateAccount
-  forgotPassword: ForgotPassword
   login: Login
   logout: Logout
-  permissions: Permissions | null
+  forgotPassword: ForgotPassword
   resetPassword: ResetPassword
-  setPermissions: (permissions: Permissions | null) => void
   setUser: (user: User | null) => void
-  loading: boolean
-  user: User | null
-  error: string | null
+  setPermissions: (permissions: Permissions | null) => void
 }

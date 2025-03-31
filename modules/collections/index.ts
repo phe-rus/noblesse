@@ -1,2 +1,2 @@
 export * from './users/index'
-export * from './Media'
+export * from './media'

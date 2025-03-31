@@ -33,6 +33,14 @@ export const Users: CollectionConfig = {
   },
   fields: [
     {
+      name: 'avatar',
+      type: 'upload',
+      relationTo: 'media',
+      admin: {
+        position: 'sidebar',
+      },
+    },
+    {
       name: 'roles',
       type: 'select',
       required: true,

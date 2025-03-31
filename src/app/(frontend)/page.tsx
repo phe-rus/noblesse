@@ -18,7 +18,7 @@ export default async function HomePage() {
     <div className="relative">
       <HerosHolder />
       <div className="container flex flex-col gap-5 items-center">
-        <div className="flex flex-col gap-3 max-w-2xl mt-5">
+        <div className="flex flex-col gap-5 max-w-2xl my-10">
           <h1 className="text-3xl font-bold">Noblesse</h1>
           <p className="text-sm font-light">
             Noblesse is an all-in-one cloud platform designed for developers, startups, and
@@ -39,6 +39,38 @@ export default async function HomePage() {
             Built for performance, security, and ease of use, Noblesse is the future of self-hosted
             cloud infrastructure. 🚀
           </p>
+          <h1 className="text-3xl font-bold">Key Features</h1>
+          <ul className="list-disc pl-6 text-sm font-light space-y-2">
+            <li>
+              Self-hosted Solution: Keep full control of your data by hosting the platform on your
+              own infrastructure.
+            </li>
+            <li>
+              Deployment as a Service: Host static and dynamic web applications effortlessly,
+              similar to Vercel.
+            </li>
+            <li>
+              Database Management: Manage and store your databases with ease, providing a flexible
+              backend.
+            </li>
+            <li>
+              Cloud Storage: Use Noblesse as a storage solution, enabling file uploads, management,
+              and retrieval similar to Google Drive or Firebase but borrowing concepts from github.
+            </li>
+            <li>
+              Authentication & User Management: Securely handle user authentication and roles, this
+              as alot behind it but for now ill keep it short.
+            </li>
+            <li>
+              Extensibility: Easily integrate third-party services and build custom functionalities
+              on top of Noblesse.
+            </li>
+            <li>
+              Highly Configurable: Customize the platform to meet your unique project needs, this
+              will be dependant on an if statement, if the structure starts of in block form will
+              structure it to be customizable else this will be more like theme editing.
+            </li>
+          </ul>
         </div>
       </div>
     </div>

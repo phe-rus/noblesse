@@ -15,6 +15,7 @@
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start"
   },
   "dependencies": {
+    "@hookform/resolvers": "^4.1.3",
     "@payloadcms/db-mongodb": "latest",
     "@payloadcms/next": "latest",
     "@payloadcms/payload-cloud": "latest",
@@ -27,6 +28,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cross-env": "^7.0.3",
+    "geist": "^1.3.1",
     "graphql": "^16.8.1",
     "lucide-react": "^0.485.0",
     "next": "15.2.3",
@@ -35,10 +37,13 @@
     "postcss": "^8.5.3",
     "react": "19.0.0",
     "react-dom": "19.0.0",
+    "react-hook-form": "^7.55.0",
     "sharp": "0.32.6",
+    "sonner": "^2.0.2",
     "tailwind-merge": "^3.0.2",
     "tailwindcss": "^4.0.17",
-    "tw-animate-css": "^1.2.5"
+    "tw-animate-css": "^1.2.5",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
