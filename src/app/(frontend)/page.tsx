@@ -1,5 +1,4 @@
 import { headers as getHeaders } from 'next/headers.js'
-import Image from 'next/image'
 import { getPayload } from 'payload'
 import React from 'react'
 import { fileURLToPath } from 'url'
@@ -18,43 +17,28 @@ export default async function HomePage() {
   return (
     <div className="relative">
       <HerosHolder />
-      <div className="container">
-        <div className="content">
-          <picture>
-            <source srcSet="https://raw.githubusercontent.com/payloadcms/payload/main/packages/ui/src/assets/payload-favicon.svg" />
-            <Image
-              alt="Payload Logo"
-              height={65}
-              src="https://raw.githubusercontent.com/payloadcms/payload/main/packages/ui/src/assets/payload-favicon.svg"
-              width={65}
-            />
-          </picture>
-          {!user && <h1>Welcome to your new project.</h1>}
-          {user && <h1>Welcome back, {user.email}</h1>}
-          <div className="links">
-            <a
-              className="admin"
-              href={payloadConfig.routes.admin}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Go to admin panel
-            </a>
-            <a
-              className="docs"
-              href="https://payloadcms.com/docs"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Documentation
-            </a>
-          </div>
-        </div>
-        <div className="footer">
-          <p>Update this page by editing</p>
-          <a className="codeLink" href={fileURL}>
-            <code>app/(frontend)/page.tsx</code>
-          </a>
+      <div className="container flex flex-col gap-5 items-center">
+        <div className="flex flex-col gap-3 max-w-2xl mt-5">
+          <h1 className="text-3xl font-bold">Noblesse</h1>
+          <p className="text-sm font-light">
+            Noblesse is an all-in-one cloud platform designed for developers, startups, and
+            businesses that need scalable infrastructure for hosting, databases, storage, and
+            version control. Inspired by Vercel, Firebase, Google Drive, and GitHub, Noblesse
+            provides a seamless environment where users can deploy websites, manage databases, store
+            files, and track project versions—all within a dynamic, containerized ecosystem powered
+            by Docker.
+            <br />
+            <br />
+            With Noblesse, users get auto-scaling hosting, serverless databases, secure cloud
+            storage, and Git-like versioning, ensuring efficient resource management and seamless
+            project collaboration. Whether you're a solo developer or an enterprise, Noblesse grows
+            with your needs, offering on-demand expansion and per-user storage buckets that scale as
+            your data increases.
+            <br />
+            <br />
+            Built for performance, security, and ease of use, Noblesse is the future of self-hosted
+            cloud infrastructure. 🚀
+          </p>
         </div>
       </div>
     </div>
